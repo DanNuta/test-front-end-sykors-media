@@ -2,15 +2,19 @@ import { FaBars, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
 import { Search } from "../../Search";
+import { LeftMenu } from "../../LeftMenu";
 
 import "./style.css";
 
 export const Mobile = () => {
   const [isOpenSearch, setIsOpenSearch] = useState(false);
+  const [isOpenLeftMenu, setIsOpenLeftMenu] = useState(false);
   return (
     <>
       <div>
-        <FaBars size={24} />
+        <button className="btn-default" onClick={() => setIsOpenLeftMenu(true)}>
+          <FaBars size={24} />
+        </button>
       </div>
       <div>LOGO</div>
       <div>
@@ -21,6 +25,10 @@ export const Mobile = () => {
 
       {isOpenSearch && (
         <Search onCloseSearchOverlay={() => setIsOpenSearch(false)} />
+      )}
+
+      {isOpenLeftMenu && (
+        <LeftMenu onCloseLeftMenu={() => setIsOpenLeftMenu(false)} />
       )}
     </>
   );
