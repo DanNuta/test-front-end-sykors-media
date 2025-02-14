@@ -1,0 +1,24 @@
+.info-card {
+  padding-block: 16px;
+}
+
+.info-card .title-sub-title h2 {
+  color: rgb(64 64 64);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.info-card .title-sub-title p {
+  color: rgb(115 115 115);
+  font-size: 14px;
+}
+
+.info-card .image {
+  width: 150px;
+  height: 100px;
+}
+
+.info-card .image img {
+  width: 100%;
+  height: 100%;
+}

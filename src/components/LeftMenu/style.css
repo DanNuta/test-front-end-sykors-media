@@ -1,19 +1,19 @@
 .left-menu-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.658);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
 }
 
 .left-menu-content {
   position: relative;
-  height: 100%;
   padding: 24px;
+  height: calc(100% - 48px);
   background-color: white;
-  width: 30%;
+  width: 70%;
 }
 
 .left-menu-close-btn {
@@ -26,17 +26,43 @@
   text-align: left;
 }
 
-.left-menu-content .standalone > div {
-  text-align: center;
-  margin-bottom: 8px;
+.left-menu-content .main-links li,
+.extra-links li {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 12px;
+  font-weight: bold;
 }
 
-.left-menu-content .standalone > ul {
-  gap: 8px;
+.left-menu-content .extra-links .extend {
+  margin-left: 16px;
+}
+
+.left-menu-content .left-content-body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.left-menu-content .left-content-body .mode {
+  margin-bottom: 50px;
+}
+
+.left-menu-content .social-media-circle {
+  background-color: rgb(245, 245, 245);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 @media (min-width: 1024px) {
   .left-menu-logo {
     text-align: center;
+  }
+
+  .left-menu-content {
+    width: 30%;
   }
 }

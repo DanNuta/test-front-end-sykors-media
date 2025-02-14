@@ -1,0 +1,13 @@
+.title-link-list > div {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+
+.title-link-list ul li a {
+  color: inherit;
+}
+
+.title-link-list > ul {
+  gap: 8px;
+}

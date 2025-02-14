@@ -88,7 +88,6 @@ video {
 }
 
 article,
-aside,
 details,
 figcaption,
 figure,
@@ -125,4 +124,11 @@ table {
 }
 input {
   outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
 }

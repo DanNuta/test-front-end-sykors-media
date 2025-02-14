@@ -1,0 +1,18 @@
+.standalone {
+  display: flex;
+  align-items: center;
+}
+
+.standalone .content {
+  background-color: rgb(11 0 138);
+  padding: 4px 24px;
+  color: white;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+
+.standalone .segment {
+  background-color: rgb(11 0 138);
+  height: 2px;
+  width: 100%;
+}

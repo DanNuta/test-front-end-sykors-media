@@ -1,0 +1,10 @@
+.navbar-desktop .navbar-desktop-logo {
+  border-right: 1px solid black;
+  padding-right: 12px;
+}
+
+.highlight-link a {
+  color: white;
+  background-color: rgb(120 118 255);
+  padding-inline: 8px;
+}

@@ -18,9 +18,39 @@
   flex-direction: column;
 }
 
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.py-20 {
+  padding-block: 20px;
+}
+
+.px-20 {
+  padding-inline: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .btn-default {
   border: none;
   outline: none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
